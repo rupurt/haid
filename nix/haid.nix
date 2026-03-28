@@ -11,6 +11,12 @@ rustPlatform.buildRustPackage {
 
   cargoLock = {
     lockFile = ../Cargo.lock;
+    outputHashes = {
+      "candle-core-0.9.2" = "sha256-GeU7yc4vqN0hy3tJAq0LDhwnpO4XDeVVmxaBchKWkWg=";
+      "candle-nn-0.9.2" = "sha256-GeU7yc4vqN0hy3tJAq0LDhwnpO4XDeVVmxaBchKWkWg=";
+      "candle-transformers-0.9.2" = "sha256-GeU7yc4vqN0hy3tJAq0LDhwnpO4XDeVVmxaBchKWkWg=";
+      "sift-0.2.0" = "sha256-WLOk8vK7johgJ1NMBKzeFeYHrMX//uvWG1er0Ztk5jw=";
+    };
   };
 
   doCheck = false;

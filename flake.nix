@@ -5,7 +5,12 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     rust-overlay.url = "github:oxalica/rust-overlay";
     flake-utils.url = "github:numtide/flake-utils";
-    keel.url = "path:../../spoke-sh/keel";
+    keel = {
+      url = "git+ssh://git@github.com/spoke-sh/keel.git?ref=main";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.rust-overlay.follows = "rust-overlay";
+      inputs.flake-utils.follows = "flake-utils";
+    };
   };
 
   outputs = { self, nixpkgs, rust-overlay, flake-utils, keel }:

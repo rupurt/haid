@@ -18,6 +18,33 @@
         "type": "github"
       }
     },
+    "keel": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-overlay": [
+          "rust-overlay"
+        ]
+      },
+      "locked": {
+        "lastModified": 1774715328,
+        "narHash": "sha256-MuJnoReTsXpMWJ3RdQZ0gqhx0UZ0CyhJO2n/h+LCOqQ=",
+        "ref": "main",
+        "rev": "609c2c6dda46ed7960e9b0809164488aa7353ac0",
+        "revCount": 606,
+        "type": "git",
+        "url": "ssh://git@github.com/spoke-sh/keel.git"
+      },
+      "original": {
+        "ref": "main",
+        "type": "git",
+        "url": "ssh://git@github.com/spoke-sh/keel.git"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1773389992,
@@ -53,6 +80,7 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
+        "keel": "keel",
         "nixpkgs": "nixpkgs",
         "rust-overlay": "rust-overlay"
       }
